@@ -1,0 +1,22 @@
+citHeader("To cite prWarp in publication use:")
+
+citEntry(
+	entry="Article",
+	title="Detecting phylogenetic signal and adaptation in papionin cranial shape by decomposing variation at different spatial scales",
+	author="Nicole D. S. Grunstra and Silvester Bartsch and Anne Le Maitre and Philipp Mitteroecker",
+	journal="Systematic Biology",
+	year="2020",
+	textVersion="Grunstra, N.D.S., et al. (in press) Detecting phylogenetic signal and adaptation in papionin cranial shape by decomposing variation at different spatial scales. Systematic Biology."
+)
+
+citEntry(
+	entry="Article",
+	title="Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form",
+	author="Philipp Mitteroecker and Silvester Bartsch and Corinna Erkinger and Nicole D. S. Grunstra and Anne Le Maitre and Fred L. Bookstein",
+	journal="Systematic Biology",
+	year="2020",
+	volume="69",
+  number="5",
+  pages="913--926",
+	textVersion="Mitteroecker, P., et al. (2020) Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form. Systematic Biology, 69(5): 913--926. https://doi.org/10.1093/sysbio/syaa007 "
+)
