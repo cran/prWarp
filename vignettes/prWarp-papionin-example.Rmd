@@ -77,7 +77,7 @@ For the analyses of total shape variation use slid landmarks *after* superimposi
 
 Total shape variation for all specimens.
 ```{r plot total shape}
-plotAllSpecimens(total_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(total_shape[all_links[,1],1,i], 
            total_shape[all_links[,1],2,i], 
@@ -95,7 +95,7 @@ for (i in 1:n_species) {
   total_shape_between[,,i] <- mshape(total_shape[, , spi])
 }
 # Plot total shape between species
-plotAllSpecimens(total_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(total_shape_between[all_links[,1],1,i], 
            total_shape_between[all_links[,1],2,i], 
@@ -115,7 +115,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species total shape
-plotAllSpecimens(total_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(total_shape_within[all_links[,1],1,i], 
            total_shape_within[all_links[,1],2,i], 
@@ -179,7 +179,7 @@ For the analyses of the outline shape variation, use slid landmarks *after* supe
 
 Outline shape for all specimens.
 ```{r plot outline shape}
-plotAllSpecimens(outline_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(outline_shape[outline_links[,1],1,i], 
            outline_shape[outline_links[,1],2,i], 
@@ -197,7 +197,7 @@ for (i in 1:n_species) {
   outline_shape_between[,,i] <- mshape(outline_shape[, , spi])
 }
 # Plot outline shape between species
-plotAllSpecimens(outline_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(outline_shape_between[outline_links[,1],1,i], 
            outline_shape_between[outline_links[,1],2,i], 
@@ -217,7 +217,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species total shape
-plotAllSpecimens(outline_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(outline_shape_within[outline_links[,1],1,i], 
            outline_shape_within[outline_links[,1],2,i], 
@@ -251,7 +251,7 @@ For the analyses of the residual shape variation no superimposition is needed be
 
 Residual shape for all specimens.
 ```{r plot residual shape}
-plotAllSpecimens(residual_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(residual_shape[all_links[,1],1,i], 
            residual_shape[all_links[,1],2,i], 
@@ -269,7 +269,7 @@ for (i in 1:n_species) {
   residual_shape_between[,,i] <- mshape(residual_shape[, ,spi])
 }
 # Plot residual shape between species
-plotAllSpecimens(residual_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(residual_shape_between[all_links[,1],1,i], 
            residual_shape_between[all_links[,1],2,i], 
@@ -289,7 +289,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species residual shape
-plotAllSpecimens(residual_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(residual_shape_within[all_links[,1],1,i], 
            residual_shape_within[all_links[,1],2,i], 
@@ -454,8 +454,8 @@ abline(mod_within, col = "blue")
 
 Bookstein FL (1989). Principal Warps: Thin-plate splines and the decomposition of deformations. *IEEE Transactions on pattern analysis and machine intelligence 11(6)*: 567--585. https://ieeexplore.ieee.org/abstract/document/24792 
 
-Grunstra NDS et al. (in press). Detecting phylogenetic signal and adaptation in papionin cranial shape by decomposing variation at different spatial scales. *Systematic Biology*
+Grunstra NDS et al. (2021). Detecting phylogenetic signal and adaptation in papionin cranial shape by decomposing variation at different spatial scales. *Systematic Biology*, 70(4): 694--706. https://doi.org/10.1093/sysbio/syaa093
 
 Grunstra, NDS et al. (2020). Data form: Detecting phylogenetic signal and adaptation in papionin cranial shape by decomposing variation at different spatial scales. *Dryad Digital Repository* https://doi.org/10.5061/dryad.zkh189373
 
-Mitteroecker P et al. (2020). Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form. *Systematic Biology 69(5)*: 913--926. https://doi.org/10.1093/sysbio/syaa007 
+Mitteroecker P et al. (2020). Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form. *Systematic Biology*, 69(5): 913--926. https://doi.org/10.1093/sysbio/syaa007 

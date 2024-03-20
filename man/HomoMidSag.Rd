@@ -20,9 +20,9 @@ Master's thesis, University of Vienna.
 
 Mitteroecker, Philipp et al. (2020)
 Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form.
-\emph{Systematic Biology}, syaa007. \url{https://doi.org/10.1093/sysbio/syaa007}
+\emph{Systematic Biology}, 69(5): 913--926. doi: 10.1093/sysbio/syaa007
 
 Mitteroecker, Philipp et al. (2020)
 Data form: Morphometric variation at different spatial scales: coordination and compensation in the emergence of organismal form.
-\emph{Dryad Digital Repository}. \url{https://doi.org/10.5061/dryad.j6q573n8s}
+\emph{Dryad Digital Repository}. doi: 10.5061/dryad.j6q573n8s
 }

@@ -12,7 +12,7 @@ homo_ar <- geomorph::arrayspecs(HomoMidSag, k, 2)  # create an array
 dimnames(homo_ar)[[1]] <- 1:k
 dimnames(homo_ar)[[2]] <- c("X", "Y")
 
-## ----gpa, include=FALSE-------------------------------------------------------
+## ----gpa----------------------------------------------------------------------
 homo_gpa <- Morpho::procSym(homo_ar)
 m_overall <- homo_gpa$rotated  # Procrustes coordinates
 m_mshape <- homo_gpa$mshape  # average shape
@@ -41,7 +41,7 @@ tr_nonaf <- sum(diag(t(homo_be_pw$Xnonaf) %*% homo_be_pw$Xnonaf))
 # Convert matrix into a 3D array
 Anonaf <- xxyy.to.array(homo_be_pw$Xnonaf, p = k, k = 2) 
 # Plot the non-affine shape variation around the mean
-geomorph::plotAllSpecimens(Anonaf, plot.param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
+geomorph::plotAllSpecimens(Anonaf, plot_param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
 
 ## -----------------------------------------------------------------------------
 # Compute the self-similar distribution
@@ -51,7 +51,7 @@ tr_defl <- sum(diag(t(Xdefl) %*% Xdefl))
 # Convert matrix into a 3D array
 Adefl <- xxyy.to.array(Xdefl, p = k, k = 2) 
 # Plot the self-similar distribution
-geomorph::plotAllSpecimens(Adefl, plot.param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
+geomorph::plotAllSpecimens(Adefl, plot_param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
 
 
 ## -----------------------------------------------------------------------------
@@ -60,5 +60,5 @@ Xmd <- md.distri(m_mshape, n = n_spec, sd = 0.005)
 # Convert matrix into a 3D array
 Amd <- xxyy.to.array(Xmd, p = k, k = 2) 
 # Plot the Mardia-Dryden distribution
-geomorph::plotAllSpecimens(Amd, plot.param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
+geomorph::plotAllSpecimens(Amd, plot_param = list(pt.cex = 0.3, mean.cex = 0.8, mean.col = "red"))
 

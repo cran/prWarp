@@ -40,7 +40,7 @@ text(papionin_ar_slid[-all_semi_lm,,1], label = c(1:k)[-all_semi_lm], pos = 1, c
 text(papionin_ar_slid[all_semi_lm,,1], label = all_semi_lm, pos = 1, col = "black", cex = 0.6)
 
 ## ----plot total shape---------------------------------------------------------
-plotAllSpecimens(total_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(total_shape[all_links[,1],1,i], 
            total_shape[all_links[,1],2,i], 
@@ -56,7 +56,7 @@ for (i in 1:n_species) {
   total_shape_between[,,i] <- mshape(total_shape[, , spi])
 }
 # Plot total shape between species
-plotAllSpecimens(total_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(total_shape_between[all_links[,1],1,i], 
            total_shape_between[all_links[,1],2,i], 
@@ -74,7 +74,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species total shape
-plotAllSpecimens(total_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(total_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(total_shape_within[all_links[,1],1,i], 
            total_shape_within[all_links[,1],2,i], 
@@ -120,7 +120,7 @@ text(outline_ar_slid[outline_semi_lm,,1], label = outline_semi_lm, pos = 1, col 
 text(outline_ar_slid[-outline_semi_lm,,1], label = c(1:k_out)[-outline_semi_lm], pos = 1, col = "red", cex = 0.8)
 
 ## ----plot outline shape-------------------------------------------------------
-plotAllSpecimens(outline_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(outline_shape[outline_links[,1],1,i], 
            outline_shape[outline_links[,1],2,i], 
@@ -136,7 +136,7 @@ for (i in 1:n_species) {
   outline_shape_between[,,i] <- mshape(outline_shape[, , spi])
 }
 # Plot outline shape between species
-plotAllSpecimens(outline_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(outline_shape_between[outline_links[,1],1,i], 
            outline_shape_between[outline_links[,1],2,i], 
@@ -154,7 +154,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species total shape
-plotAllSpecimens(outline_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(outline_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(outline_shape_within[outline_links[,1],1,i], 
            outline_shape_within[outline_links[,1],2,i], 
@@ -175,7 +175,7 @@ text(outline_shape_pca$x[,1:2], labels = levels(species), pos = 1, cex = 0.8)
 residual_shape <- tps.all(papionin_ar_slid, outline_ar_slid, outline_shape_average)  # warping to the average outline shape
 
 ## ----plot residual shape------------------------------------------------------
-plotAllSpecimens(residual_shape, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(residual_shape[all_links[,1],1,i], 
            residual_shape[all_links[,1],2,i], 
@@ -191,7 +191,7 @@ for (i in 1:n_species) {
   residual_shape_between[,,i] <- mshape(residual_shape[, ,spi])
 }
 # Plot residual shape between species
-plotAllSpecimens(residual_shape_between, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape_between, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_species) {
   segments(residual_shape_between[all_links[,1],1,i], 
            residual_shape_between[all_links[,1],2,i], 
@@ -209,7 +209,7 @@ for (i in 1:n_species) {
   }
 }
 # Plot the pooled individual within-species residual shape
-plotAllSpecimens(residual_shape_within, mean = FALSE, plot.param = list(pt.cex = 0.5))
+plotAllSpecimens(residual_shape_within, mean = FALSE, plot_param = list(pt.cex = 0.5))
 for (i in 1:n_spec) {
   segments(residual_shape_within[all_links[,1],1,i], 
            residual_shape_within[all_links[,1],2,i], 

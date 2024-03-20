@@ -1,8 +1,8 @@
 #' Thin plate spline mapping (2D and 3D) for several sets of landmark coordinates
 #'
 #' @description Maps landmarks via thin plate spline
-#' based on a reference and a target configuration in 2D and 3D.
-#' This function is an extension of the tps3d function a set of specimens.
+#' based on a reference and a target configuration in 2D or in 3D.
+#' This function is an extension of the tps3d function for a set of specimens.
 #'
 #' @param X_array original coordinates
 #' - a 3D array (p x k x n) containing original landmark coordinates for a set of specimens
@@ -17,7 +17,7 @@
 #'
 #' @references Bookstein FL. (1989).
 #' Principal Warps: Thin-plate splines and the decomposition of deformations.
-#' \emph{IEEE Transactions on pattern analysis and machine intelligence 11(6)}: 567--585.
+#' \emph{IEEE Transactions on pattern analysis and machine intelligence}, 11(6): 567--585.
 #' \url{https://ieeexplore.ieee.org/abstract/document/24792}
 #'
 #' @return Function returns a 3D array (p x k x n) containing the deformed input
